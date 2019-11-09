@@ -1,0 +1,188 @@
+*{
+  border-radius: 2px !important;
+}
+
+button{
+  border-radius: 50px !important;
+}
+
+select{
+  border-radius: 50px !important;
+}
+
+li{
+    list-style: none !important;
+}
+
+a, button{
+    text-decoration: none !important;
+}
+
+
+body{
+  background: rgb(235, 235, 235);
+  margin: auto !important;
+}
+
+.search{
+  border: none !important;
+}
+
+/* STADIUMS SEARCH - START */
+
+#stadiums_search{
+  min-height: 400px;
+}
+
+#searchdiv{
+  color:  #5b813d;
+  width: 91%;
+  background: white;
+}
+#maindiv{
+  padding: 35px;
+} 
+#searchdiv h1{
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid rgb(235, 235, 235);;
+}
+#searchdiv #options select{
+  cursor: pointer;
+  width: 200px;
+  margin: 10px 60px 10px 0;
+  height: 25px;
+  font-size: 15px;
+  background-color: white;
+  color:  #5b813d;
+}
+#searchdiv #radios{
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+#searchdiv #options{
+  list-style: none;
+  border-bottom: 1px solid rgb(235, 235, 235);;
+  margin-bottom: 20px;
+}
+
+#searchdiv #maindiv button{
+  display: flex;
+  width: 100px;
+  height: 30px;
+  background-color:  #5b813d;
+  border: none;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  padding-left: 27px;
+}
+
+#searchdiv #radios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#radios input{
+  margin: 0 70px 0 10px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+/* STADIUMS SEARCH - END */
+
+
+/* STADIUMS CARDS - START */
+
+#stadiums-cards{
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  margin: 50px auto 0;
+}
+
+.cardsarea {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.cardsarea .wrapper {
+  width: 240px;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.1);}
+
+.cardsarea .wrapper:hover .data {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.cardsarea .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(170px);
+          transform: translateY(170px);
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.cardsarea .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.cardsarea .title {
+  margin-top: 10px;
+}
+
+.cardsarea .name {
+  font-size: 22px;
+  color: #5b813d;
+  font-weight: 700;
+}
+
+.info {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.cardsarea .text {
+  font-size: 14px;
+  height: 90px;
+}
+
+/* .example-1 {
+} */
+
+.example-1 .content {
+  background-color: #fff;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+.text {
+  background: -webkit-linear-gradient(#333, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* #cardsarea{
+  background: white;
+} */
+
+/* STADIUMS CARDS - END */
+.info{
+  color: black;
+}

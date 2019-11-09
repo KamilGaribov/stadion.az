@@ -1,0 +1,63 @@
+*{
+    border-radius: 2px;
+}
+
+.registration p{
+    color:white;
+    font-size: 12px;
+}
+
+.registration span:hover{
+    color:#5b813d;
+    cursor: pointer;
+}
+
+.registration{
+    text-align: center;
+    padding: 30px;
+    background: none;
+    outline: 0;
+    color: #474545;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.registration i{
+    color: white;
+    margin: 5px;
+}
+.registration input{
+    width: 195px;
+    height: 30px;
+    margin: 5px 0;
+    background: transparent;
+    border: none;
+    color: white;;
+}
+
+input::placeholder {
+    color:rgb(194, 187, 187);
+  }
+
+
+.username, .password, .email{
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.login-icon-field{
+    margin-bottom: 30px;
+}
+
+.registration button{
+    margin: 20px 0 10px;
+    width: 100%;
+    background: #5b813d;
+    border: none;
+    color: white;
+}
+
+.close i{
+    color: white;
+}

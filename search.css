@@ -1,0 +1,81 @@
+*{
+    border-radius: 2px !important;
+  }
+  
+  button{
+    border-radius: 50px !important;
+  }
+  
+  select{
+    border-radius: 50px !important;
+  }
+
+  li{
+      list-style: none !important;
+  }
+  
+  a, button{
+      text-decoration: none !important;
+  }
+
+#searchdiv{
+    width: 300px;
+    min-height: 400px;
+    background-color: white;
+    border: solid 1px;
+    color:  #5b813d;
+}
+#maindiv{
+    padding: 35px;
+} 
+#searchdiv h1{
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+#searchdiv #options select{
+    cursor: pointer;
+    width: 100%;
+    height: 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    background-color: white;
+    color:  #5b813d;
+}
+#searchdiv #radios{
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+#searchdiv #options{
+    list-style: none;
+    border-radius: 50px;
+}
+#searchdiv #maindiv button{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background-color:  #5b813d;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    padding-left: 27px;
+}
+#searchdiv #radios{
+    display: flex;
+    flex-wrap: wrap;
+}
+#radios input{
+    margin: 0 40px 0 10px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}

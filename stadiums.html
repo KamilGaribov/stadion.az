@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900|Roboto:100,300,400,500,700,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="registration/registration.css">
+    <link rel="stylesheet" href="stadiums.css">
+    <title>Stadion.az | Stadionlar</title>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="close" onclick="closePopup()"><i class="fas fa-times"></i></div>
+        <div class="overlay__inner"></div>
+    </div>
+    <div class="mask" onclick="closePopup()"></div>
+
+    <div id="navbar-wrapper">
+        <div id="navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- <a class="navbar-brand" href="#"><i class="fas fa-futbol fa-2x"></i></a> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto"></ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item active"">
+                                            <a class=" nav-link" href="#">Stadionlar</a>
+                            </li>
+                            <li class="nav-item active  ">
+                                <a class="nav-link" href="#">Komandalar</a>
+                            </li>
+                            <li class="nav-item active  ">
+                                <a class="nav-link" href="#">Oyunlar</a>
+                            </li>
+                            <li class="nav-item active  ">
+                                <a class="nav-link" href="#">Haqqımızda</a>
+                            </li>
+                            <li class="nav-item active  ">
+                                <a class="nav-link" href="#">Əlaqə</a>
+                            </li>
+                            <li><i class="fas fa-search"></i></li>
+                            <li onclick="registration(); signUpPage(); "><i class="fas fa-user-plus"></i>
+                            </li>
+                            <li onclick="registration(); signInPage();"><i class="fas fa-sign-in-alt"></i></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section id="stadiums_search">
+        <div class="container test">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 search">
+                    <div id="searchdiv">
+                        <div id="maindiv">
+                            <h1>Axtarış</h1>
+                            <div id="selection">
+                                <div id="options"></div>
+                                <div id="radios"></div>
+                            </div>
+                            <button onclick="axtaris2()">Axtar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stadiums-cards">
+        <div class="container test">
+            <div class="row" id="cardsarea">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/baca010a78.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAoPXu_FfiFdUmBhUr0DExCyKXVc_IoYR4",
+            authDomain: "signin-signup-767a6.firebaseapp.com",
+            databaseURL: "https://signin-signup-767a6.firebaseio.com",
+            projectId: "signin-signup-767a6",
+            storageBucket: "signin-signup-767a6.appspot.com",
+            messagingSenderId: "11903197096",
+            appId: "1:11903197096:web:091eb10af7561a0788079d",
+            measurementId: "G-3H7RG4V6BE"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="app.js"></script>
+    <script src="registration/registration.js"></script>
+    <script src="test.js"></script>
+    <script src="stadiums.js"></script>
+    <script src="filter.js"></script>
+</body>
+
+</html>

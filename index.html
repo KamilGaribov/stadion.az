@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900|Roboto:100,300,400,500,700,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="registration/registration.css">
+    <title>Stadion.az</title>
+</head>
+
+<body>
+
+
+    <div id="navbar-wrapper">
+        <div id="navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- <a class="navbar-brand" href="#"><i class="fas fa-futbol fa-2x"></i></a> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto"></ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item active"">
+                                        <a class=" nav-link" href="#">Stadionlar</a>
+                            </li>
+                            <li class="nav-item active  ">
+                                <a class="nav-link" href="#">Komandalar</a>
+                            </li>
+                            <li class="nav-item active  ">
+                                <a class="nav-link" href="#">Oyunlar</a>
+                            </li>
+                            <li class="nav-item active  ">
+                                <a class="nav-link" href="#">Haqqımızda</a>
+                            </li>
+                            <li class="nav-item active  ">
+                                <a class="nav-link" href="#">Əlaqə</a>
+                            </li>
+                            <li><i class="fas fa-search"></i></li>
+                            <li onclick="registration(); signUpPage(); "><i class="fas fa-user-plus"></i>
+                            </li>
+                            <li onclick="registration(); signInPage();"><i class="fas fa-sign-in-alt"></i></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="close" onclick="closePopup()"><i class="fas fa-times"></i></div>
+        <div class="overlay__inner"></div>
+    </div>
+    <div class="mask" onclick="closePopup()"></div>
+
+
+    <section id="intro">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 search">
+                    <div id="searchdiv">
+                        <div id="maindiv">
+                            <h1>Axtarış</h1>
+                            <div id="selection">
+                                <div id="options"></div>
+                                <div id="radios"></div>
+                            </div>
+                            <button onclick="axtaris()"><a href="https://KamilGaribovgithub.io/stadion.az/stadiums.html">Axtar</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 search">
+                    salam
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 search-item">
+                    <div class='search-items'>
+                        <i class="fas fa-star-of-life"></i>
+                        <h2>STADİONLARIN ARENDASI</h2>
+                        <h3>İdman oyunları üçün meydançaları bron edin.</h3>
+                        <button><a href="">Ətraflı</a></button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 search-item">
+                    <div class='search-items'>
+                        <i class="fas fa-star-of-life"></i>
+                        <h2>KOMANDA AXTARIŞI</h2>
+                        <h3>Komanda axtarışı etməklə komandanıza rəqib tapın.</h3>
+                        <button><a href="">Ətraflı</a></button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 search-item">
+                    <div class='search-items'>
+                        <i class="fas fa-star-of-life"></i>
+                        <h2>OYUNÇU AXTARIŞI</h2>
+                        <h3>Komandanızda oyunçu çatışmırsa mövqeyə görə oyunçu axtarın.</h3>
+                        <button><a href="">Ətraflı</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col col-sm- col-md- col-lg col-xl- gradient-border">
+                    <h3 class="text-center">Şirkətimiz dostlarınızla birlikdə maraqlı oyun keçirmək üçün hər cür
+                        rahatlığa malik yüksək keyfiyyətli futbol meydançalarını təklif edir.
+                        Əsl oyun həyəcanı yaradan süni ot örtüyü ilə sərilmiş açıq və qapalı tipli futbol
+                        meydançalarımız xidmətinizdədir. Oyundan sonra komanda yoldaşlarınızla birgə istirahətinizi
+                        xüsusi ayrılmış zonada çay süfrəsi ətrafında davam etdirə bilərsiniz. Sizə təqdim olunan
+                        videofayl isə oyunun maraqlı anlarını yenidən izləməyə imkan yaradacaqdır.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="stadium_images/slider/1.jpeg">
+                        <p class="testimonial-name">Kim John Un</p>
+                        <p class="testimonial-game">126 Oyun</p>
+                        <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin seçimi.
+                            Stadion.az</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="stadium_images/slider/2.jpeg">
+                        <p class="testimonial-name">Irfan Gulam</p>
+                        <p class="testimonial-game">96 Oyun</p>
+                        <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin seçimi.
+                            Stadion.az</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="stadium_images/slider/3.jpeg">
+                        <p class="testimonial-name">Joshua Scmitzh</p>
+                        <p class="testimonial-game">75 Oyun</p>
+                        <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin seçimi.
+                            Stadion.az</p>
+                    </div>
+                    <!-- </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol> -->
+                </div>
+            </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer_socials">
+            <ul>
+                <li><i class="fab fa-linkedin fa-2x"></i></li>
+                <li><i class="fab fa-facebook-square fa-3x"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-whatsapp-square"></i></li>
+                <li><i class="fab fa-youtube-square"></i></li>
+            </ul>
+        </div>
+        <div class="footer_contact">+994 XX XXX XXXX</div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/baca010a78.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+
+     <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAoPXu_FfiFdUmBhUr0DExCyKXVc_IoYR4",
+                authDomain: "signin-signup-767a6.firebaseapp.com",
+                databaseURL: "https://signin-signup-767a6.firebaseio.com",
+                projectId: "signin-signup-767a6",
+                storageBucket: "signin-signup-767a6.appspot.com",
+                messagingSenderId: "11903197096",
+                appId: "1:11903197096:web:091eb10af7561a0788079d",
+                measurementId: "G-3H7RG4V6BE"
+            };
+    
+            var otherProjectFirebaseConfig = {
+                apiKey: "AIzaSyA1hD5aP9UiIc0LgeRt41kFhot-XoiqM4I",
+                authDomain: "stadion-c5f96.firebaseapp.com",
+                databaseURL: "https://stadion-c5f96.firebaseio.com",
+                projectId: "stadion-c5f96",
+                storageBucket: "stadion-c5f96.appspot.com",
+                messagingSenderId: "331006171385",
+                appId: "1:331006171385:web:44e23a679ef6e30e4e2a28",
+                measurementId: "G-W96YHJF1LQ"
+            };
+    
+            // Intialize the "[DEFAULT]" App
+            firebase.initializeApp(firebaseConfig);
+    
+            // Intialize a "Secondary" App
+            var otherProject = firebase.initializeApp(otherProjectFirebaseConfig, "other");
+        </script>
+
+    <script src="app.js"></script>
+    <script src="registration/registration.js"></script>
+    <script src="test.js"></script>
+    <script src="stadiums.js"></script>
+    <script src="filter.js"></script>
+</body>
+
+</html>
