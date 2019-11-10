@@ -3,6 +3,10 @@ var userVal;
 
 var userData = firebase.database().ref();
 
+var secondData = otherProject.database().ref();
+
+
+
 userData.on('value', function (callback) {
     userVal = callback.val();
     userKeys = Object.keys(userVal);
@@ -92,3 +96,20 @@ function signUp() {
         alert('bele nickname var');
     }
 };
+
+function checkUserName(){
+    var myUsername = document.querySelector('#username_input').value;
+
+    var dataArray = [];
+
+    for (let i = 0; i < userKeys.length; i++) {
+        var users_id = userKeys[i];
+        var userNickname = userVal[users_id].nickname;
+        dataArray.push(userNickname);
+    }
+
+    var userIndex = dataArray.indexOf(myUsername);
+    if (userIndex !== -1) {
+        alert('bu istifadeci adi movcuddur');
+    }
+}
