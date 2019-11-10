@@ -108,14 +108,29 @@
             appId: "1:11903197096:web:091eb10af7561a0788079d",
             measurementId: "G-3H7RG4V6BE"
         };
-        // Initialize Firebase
+
+        var otherProjectFirebaseConfig = {
+            apiKey: "AIzaSyA1hD5aP9UiIc0LgeRt41kFhot-XoiqM4I",
+            authDomain: "stadion-c5f96.firebaseapp.com",
+            databaseURL: "https://stadion-c5f96.firebaseio.com",
+            projectId: "stadion-c5f96",
+            storageBucket: "stadion-c5f96.appspot.com",
+            messagingSenderId: "331006171385",
+            appId: "1:331006171385:web:44e23a679ef6e30e4e2a28",
+            measurementId: "G-W96YHJF1LQ"
+        };
+
+        // Intialize the "[DEFAULT]" App
         firebase.initializeApp(firebaseConfig);
+
+        // Intialize a "Secondary" App
+        var otherProject = firebase.initializeApp(otherProjectFirebaseConfig, "other");
     </script>
 
     <script src="app.js"></script>
     <script src="registration/registration.js"></script>
     <script src="test.js"></script>
-    <script src="stadiums.js"></script>
+    <!-- <script src="stadiums.js"></script> -->
     <script src="filter.js"></script>
 </body>
 
