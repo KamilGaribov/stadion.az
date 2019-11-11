@@ -22,7 +22,7 @@
     width: 300px;
     min-height: 400px;
     background-color: white;
-    border: solid 1px;
+    box-shadow: 1px 1px 177px #acacacb0;
     color:  #5b813d;
 }
 #maindiv{
@@ -31,17 +31,17 @@
 #searchdiv h1{
     padding-bottom: 20px;
     font-size: 30px;
+    font-weight: 700;
     text-align: center;
-    border-bottom: 1px solid;
-    margin-bottom: 20px;
 }
 #searchdiv #options select{
     cursor: pointer;
     width: 100%;
     height: 25px;
     font-size: 15px;
-    margin-bottom: 10px;
-    border-radius: 50px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-radius: 8px !important;
     background-color: white;
     color:  #5b813d;
 }
@@ -51,7 +51,7 @@
 }
 #searchdiv #options{
     list-style: none;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 #searchdiv #maindiv button{
     display: flex;

@@ -295,12 +295,13 @@ secondData.on('value', function (callback) {
         for (let j = 0; j < qlavniArr.length; j++) {
             for (let i = 0; i < stadions.length; i++) {
                 if (qlavniArr[j] == stadions[i].name) {
-                    console.log(stadions[i].name)
                     var example1_carddiv = document.createElement("div")
                     example1_carddiv.setAttribute("class", "example-1 cardsarea col-sm-12 col-md-6 col-lg-4 col-xl-4")
 
                     var wrapperdiv = document.createElement("div")
                     wrapperdiv.setAttribute("class", "wrapper")
+                    wrapperdiv.setAttribute("onclick", "stadiumCardsPopup();")
+
 
                     var datadiv = document.createElement("div")
                     datadiv.setAttribute("class", "data")
@@ -320,20 +321,15 @@ secondData.on('value', function (callback) {
                     textdiv.setAttribute("class", "text")
                     textdiv.innerHTML = stadions[i].city + " şəhəri, " + stadions[i].district + " r., " + stadions[i].metro + " metrosu yaxınlığında yerləşən,  yüksək standartlara cavab verən " + stadions[i].name + " idman kompleksi. Burada siz öz asudə vaxtınızı ..."
 
-                    var newlink = document.createElement("a")
-                    newlink.setAttribute("href", "nsayli.html")
-
                     example1_carddiv.append(wrapperdiv)
                     wrapperdiv.append(datadiv)
-
-                    newlink.append(contentdiv)
-
                     contentdiv.append(namespan)
                     contentdiv.append(infoh1)
                     contentdiv.append(textdiv)
-                    datadiv.append(newlink)
-
-                    document.getElementById("cardsarea").append(example1_carddiv)
+                    datadiv.append(contentdiv)
+                    document.getElementById("cardsarea").append(example1_carddiv);
+                    // console.log(stadions[i].img1)
+                    document.querySelectorAll('.wrapper')[i].style.backgroundImage = `url(${stadions[i].img1})`;
                 }
             }
         }
@@ -347,6 +343,9 @@ function stadiumsPage() {
     // firebase datani bosaldir
     secondData.set({
     })
+    // secondData.set({
+    //     sentdata: stadions
+    // })
 
     // butun datalar ile sehifeni doldurur
     for (let i = 0; i < stadions.length; i++) {
@@ -386,7 +385,6 @@ function stadiumsPage() {
         // console.log(stadions[i].img1)
         document.querySelectorAll('.wrapper')[i].style.backgroundImage = `url(${stadions[i].img1})`;
     };
-
 
 }
 
@@ -475,30 +473,30 @@ function axtaris2() {
             if (finalarr[j] == stadions[i].name) {
                 var example1_carddiv = document.createElement("div")
                 example1_carddiv.setAttribute("class", "example-1 cardsarea col-sm-12 col-md-6 col-lg-4 col-xl-4")
-        
+
                 var wrapperdiv = document.createElement("div")
                 wrapperdiv.setAttribute("class", "wrapper")
                 wrapperdiv.setAttribute("onclick", "stadiumCardsPopup();")
-        
-        
+
+
                 var datadiv = document.createElement("div")
                 datadiv.setAttribute("class", "data")
-        
+
                 var contentdiv = document.createElement("div")
                 contentdiv.setAttribute("class", "content")
-        
+
                 var namespan = document.createElement("h2")
                 namespan.setAttribute("class", "name")
                 namespan.innerHTML = stadions[i].name + '<br>';
-        
+
                 var infoh1 = document.createElement("h3")
                 infoh1.setAttribute("class", "info")
                 infoh1.innerHTML = `Qiymət: ${stadions[i].price} AZN` + '<br>' + `Ölçü: ${stadions[i].size}`;
-        
+
                 var textdiv = document.createElement("p")
                 textdiv.setAttribute("class", "text")
                 textdiv.innerHTML = stadions[i].city + " şəhəri, " + stadions[i].district + " r., " + stadions[i].metro + " metrosu yaxınlığında yerləşən,  yüksək standartlara cavab verən " + stadions[i].name + " idman kompleksi. Burada siz öz asudə vaxtınızı ..."
-        
+
                 example1_carddiv.append(wrapperdiv)
                 wrapperdiv.append(datadiv)
                 contentdiv.append(namespan)
@@ -507,7 +505,8 @@ function axtaris2() {
                 datadiv.append(contentdiv)
                 document.getElementById("cardsarea").append(example1_carddiv);
                 // console.log(stadions[i].img1)
-                document.querySelectorAll('.wrapper')[i].style.backgroundImage = `url(${stadions[i].img1})`;            }
+                document.querySelectorAll('.wrapper')[j].style.backgroundImage = `url(${stadions[i].img1})`;
+            }
         }
     }
 

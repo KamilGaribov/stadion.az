@@ -53,6 +53,8 @@ body{
   cursor: pointer;
   width: 200px;
   margin: 10px 60px 10px 0;
+  padding-left: 15px;
+  border-radius: 8px !important;
   height: 25px;
   font-size: 15px;
   background-color: white;
@@ -177,52 +179,3 @@ select {
 }
 
 /* STADIUMS CARDS - END */
-
-
-/* STADIUMS POPUP - START */
-
-
-.stadiums_popup {
-  position: relative;
-  top: 55px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  z-index: 6;
-  height: 600px;
-  width: 100%;
-  margin: auto;
-  background-color:rgb(235, 235, 235);
-}
-
-.stadiums_popup.open {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-
-.stadiums_popup_inner {
-  height: 500px;
-  width: 95%;
-  margin: 30px auto;
-  position: relative;
-  opacity: 1;
-  border: 1px solid;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
-.close i{
-  color:black;
-}
-
-.close i:hover {
-  color:#5b813d;
-}
-
-/* STADIUMS POPUP - END */

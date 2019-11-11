@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="registration/registration.css">
     <link rel="stylesheet" href="stadiums.css">
+    <link rel="stylesheet" href="stadiums_info_page.css">
     <title>Stadion.az | Stadionlar</title>
 </head>
 
@@ -25,7 +26,81 @@
 
     <div class="stadiums_popup">
         <div class="close" onclick="closeStadiumCardsPopup()"><i class="fas fa-times"></i></div>
-        <div class="stadiums_popup_inner"></div>
+        <div class="stadiums_popup_inner">
+            <section id="stadiums_info">
+                <div class="container">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="5000ms">
+                                <img src="stadium_images/slider/1.jpeg">
+
+                                <p class="testimonial-name">Kim John Un</p>
+                                <p class="testimonial-game">126 Oyun</p>
+                                <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin
+                                    seçimi.
+                                    Stadion.az</p>
+                            </div>
+                            <div class="carousel-item" data-interval="5000ms">
+                                <img src="stadium_images/slider/2.jpeg">
+                                <p class="testimonial-name">Irfan Gulam</p>
+                                <p class="testimonial-game">96 Oyun</p>
+                                <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin
+                                    seçimi.
+                                    Stadion.az</p>
+                            </div>
+                            <div class="carousel-item" data-interval="5000ms">
+                                <img src="stadium_images/slider/3.jpeg">
+                                <p class="testimonial-name">Joshua Scmitzh</p>
+                                <p class="testimonial-game">75 Oyun</p>
+                                <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin
+                                    seçimi.
+                                    Stadion.az</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="stadiums_info_main">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div id="stadium_info_name">
+                                <h3>ruslan</h3>
+                                <p>+994XX XXX XX XX</p>
+                            </div>
+                            <div id="schedule"><button>Cədvəl</button></div>
+                        </div>
+                    </div>
+                    <div class="row" id="stadiums_info_second">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <div id="stadium_info_district">
+                                <span>sadadadadasdad</span>
+                                <p>13515135135151515135</p>
+                            </div>
+                            <div id="stadium_info_metro">
+                                <span>sadadadadasdad</span>
+                                <p>13515135135151515135</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <div id="stadium_info_cover">
+                                <span>sadadadadasdad</span>
+                                <p>13515135135151515135</p>
+                            </div>
+                            <div id="stadium_info_size">
+                                <span>sadadadadasdad</span>
+                                <p>13515135135151515135</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <div id="stadium_info_cafe">
+                                <span>sadadadadasdad</span>
+                                <p>13515135135151515135</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
     </div>
 
     <div id="navbar-wrapper">
@@ -68,7 +143,7 @@
     </div>
 
     <section id="stadiums_search">
-        <div class="container test">
+        <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 search">
                     <div id="searchdiv">
@@ -79,7 +154,7 @@
                                 <div id="radios"></div>
                             </div>
                             <a href="#"><button onclick="axtaris2();">Axtar</button></a>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -137,6 +212,8 @@
     <script src="app.js"></script>
     <script src="registration/registration.js"></script>
     <script src="stadiums.js"></script>
+    <script src="tester.js"></script>
+    <script src="stadiums_info_page.js"></script>
 </body>
 
 </html>
