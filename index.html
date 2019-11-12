@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="registration/registration.css">
     <link rel="stylesheet" href="stadiums_info_page.css">
     <link rel="stylesheet" href="ball/ball.css">
+    <link rel="stylesheet" href="etrafli.css">
+    <link rel="stylesheet" href="rotate.css">
     <title>Stadion.az</title>
 </head>
 
@@ -23,8 +25,9 @@
         <div id="navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#"><img src="stadium_images/logo.png" alt="Stadion.az"
-                            style="width: 160px; height: 40px; color: white"></a>
+                    <a class="navbar-brand" href="https://kamilgaribov.github.io/stadion.az/index.html"><img
+                            src="stadium_images/logo.png" alt="Stadion.az"
+                            style="width: 150px; height: 40px; color: white"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +38,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item active"">
                                 <a onclick=" stadiumsPage();" class=" nav-link"
-                                href="http://127.0.0.1:5500/stadion.az/stadiums.html">Stadionlar</a>
+                                href="https://kamilgaribov.github.io/stadion.az/stadiums.html">Stadionlar</a>
                             </li>
                             <li class="nav-item active  ">
                                 <a class="nav-link" href="#">Komandalar</a>
@@ -77,16 +80,16 @@
                                 <div id="options"></div>
                                 <div id="radios"></div>
                             </div>
-                            <a href="http://127.0.0.1:5500/stadion.az/stadiums.html"><button
+                            <a href="https://kamilgaribov.github.io/stadion.az/stadiums.html"><button
                                     onclick="axtaris();">Axtar</button></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 search">
                     <div id="ball">
-                        <img src="ball/ball.png" alt="ball" style="width: 20px; height: 20px;">
+                        <img src="https://kamilgaribov.github.io/stadion.az/ball/ball.png" alt="ball" style="width: 20px; height: 20px;">
                     </div>
-                    <img src="stadium_images/big_logo.png" " alt=" Stadion.az">
+                    <img src="https://kamilgaribov.github.io/stadion.az/stadium_images/big_logo.png" " alt=" Stadion.az">
 
                 </div>
             </div>
@@ -96,30 +99,38 @@
     <section id="search">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 search-item">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 search-item inline-photo show-on-scroll">
                     <div class='search-items'>
-                        <img src="stadium_images/field.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="https://kamilgaribov.github.io/stadion.az/stadium_images/field.png" alt="" style="width: 50px; height: 50px;">
                         <h2>STADİONLARIN ARENDASI</h2>
                         <h3>İdman oyunları üçün meydançaları bron edin.</h3>
-                        <button><a href="">Ətraflı</a></button>
+                        <button onclick="etrafli1()">Ətraflı</button>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 search-item">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 search-item inline-photo show-on-scroll">
                     <div class='search-items'>
-                        <img src="stadium_images/team.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="https://kamilgaribov.github.io/stadion.az/stadium_images/team.png" alt="" style="width: 50px; height: 50px;">
                         <h2>KOMANDA AXTARIŞI</h2>
                         <h3>Komanda axtarışı etməklə komandanıza rəqib tapın.</h3>
-                        <button><a href="">Ətraflı</a></button>
+                        <button onclick="etrafli2()">Ətraflı</button>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 search-item">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 search-item inline-photo show-on-scroll">
                     <div class='search-items'>
-                        <img src="stadium_images/soccer-player.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="https://kamilgaribov.github.io/stadion.az/stadium_images/soccer-player.png" alt="" style="width: 50px; height: 50px;">
                         <h2>OYUNÇU AXTARIŞI</h2>
                         <h3>Komandanıza mövqeyə görə oyunçu axtarın.</h3>
-                        <button><a href="">Ətraflı</a></button>
+                        <button onclick="etrafli3()">Ətraflı</button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Modal PopUp etrafli -->
+        <div id="etrafli">
+            <div id="modaldiv">
+                <!-- <span onclick="closemodal()" id="closemodal">&times;</span> -->
+                <p id="modaltext"></p>
             </div>
         </div>
     </section>
@@ -143,10 +154,10 @@
 
     <section id="testimonial">
         <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" >
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="5000ms">
-                        <img src="stadium_images/slider/1.jpeg">
+                        <img src="https://kamilgaribov.github.io/stadion.az/stadium_images/slider/1.jpeg">
 
                         <p class="testimonial-name">Kim John Un</p>
                         <p class="testimonial-game">126 Oyun</p>
@@ -154,14 +165,14 @@
                             Stadion.az</p>
                     </div>
                     <div class="carousel-item" data-interval="5000ms">
-                         <img src="stadium_images/slider/2.jpeg">
-                        <p class="testimonial-name">Irfan Gulam</p>
+                        <img src="https://kamilgaribov.github.io/stadion.az/stadium_images/slider/2.jpeg">
+                        <p class="https://kamilgaribov.github.io/stadion.az/testimonial-name">Irfan Gulam</p>
                         <p class="testimonial-game">96 Oyun</p>
                         <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin seçimi.
                             Stadion.az</p>
                     </div>
                     <div class="carousel-item" data-interval="5000ms">
-                        <img src="stadium_images/slider/3.jpeg">
+                        <img src="https://kamilgaribov.github.io/stadion.az/stadium_images/slider/3.jpeg">
                         <p class="testimonial-name">Joshua Scmitzh</p>
                         <p class="testimonial-game">75 Oyun</p>
                         <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin seçimi.
@@ -227,6 +238,8 @@
     <script src="app.js"></script>
     <script src="registration/registration.js"></script>
     <script src="stadiums.js"></script>
+    <script src="rotate.js"></script>
+    <script src="etrafli.js"></script>
 </body>
 
 </html>

@@ -27,17 +27,17 @@
 
 
 .stadiums_popup {
-    position: relative;
+    position: fixed;
     top: 55px;
     right: 0;
     bottom: 0;
     left: 0;
     display: none;
     z-index: 6;
-    height: 600px;
+    height: 1000px;
     width: 100%;
-    margin: auto;
-    background-color:rgb(235, 235, 235);
+    /* margin: auto; */
+    background-color: white;
   }
   
   .stadiums_popup.open {
@@ -47,12 +47,12 @@
   }
   
   .stadiums_popup_inner {
-    height: 520px;
+    padding-top: 40px;
+    height: 580px;
     width: 100%;
-    /* margin: 30px auto; */
-    position: relative;
+    margin: 30px auto;
+    position: fixed;
     opacity: 1;
-    border: 1px solid;
     overflow: auto;
   }
   
@@ -77,10 +77,12 @@
 
 #stadiums_info_main {
     margin: 0 !important;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    color: gray;
+
 }
 
-#stadiums_info_main div, #stadiums_info_second{
+#stadiums_info_main div{
     display: flex;
 }
 
@@ -88,8 +90,72 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
-#stadiums_info_second div {
-    border: 1px solid;
+#stadium_info_name h3{
+  font-size: 40px;
+  font-weight: 900;
+  color: #5b813d;
+  font-family: sans-serif;
+}
+
+#stadium_info_name p{
+  font-size: 18px;
+
+}
+
+#stadium_info_time{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#stadium_info_schedule{
+  margin: auto;
+}
+
+#stadium_info_schedule button{
+  padding: 5px 30px;
+  margin: 10px 0;
+}
+
+#stadiums_info_second {
+  color: gray;
+}
+
+#stadiums_info_second p{
+  color: gray;
+  font-weight: 900;
+}
+
+#stadiums_info_second span{
+  color: gray;
+  font-weight: 600;
+}
+
+#stadiums_info_second div div{
+  display: flex;
+}
+
+#stadiums_info_about div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #5b813d;
+  font-weight: 600;
+}
+
+#stadiums_info_about img {
+  width: 20px;
+  height: 20px;
+}
+
+.item img{
+  height: 180px;
+  width: 330px;
+}
+
+.owl-dots{
+  display: none;
 }

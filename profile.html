@@ -16,14 +16,15 @@
     <title>Stadion.az | Profile</title>
 </head>
 
-<body>
+<body onload="updateProfil();">
 
     <div id="navbar-wrapper">
         <div id="navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <!-- <a class="navbar-brand" href="#"><img src="stadium_images/logo.png" alt="Stadionlar.az"
-                            style="width: 50px; height: 50px; color: white"></a> -->
+                    <a class="navbar-brand" href="https://kamilgaribov.github.io/stadion.az/index.html"><img
+                            src="stadium_images/logo.png" alt="Stadion.az"
+                            style="width: 150px; height: 40px; color: white"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +34,8 @@
                         <ul class="navbar-nav mr-auto"></ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item active"">
-                                        <a class=" nav-link" href="#">Stadionlar</a>
+                                <a onclick=" stadiumsPage();" class=" nav-link"
+                                href="https://kamilgaribov.github.io/stadion.az/stadiums.html">Stadionlar</a>
                             </li>
                             <li class="nav-item active  ">
                                 <a class="nav-link" href="#">Komandalar</a>
@@ -68,18 +70,22 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 profile">
-                    <div id="profile_wrapper">
-                        <div class="profile_cover"><img src="stadium_images/profile_cover.png" alt=""
-                                style="width: 100%; ">
-                        </div>
-                        <div class="profile_photo"><img src="stadium_images/profile.png" alt=""></div>
-                        <div class="profile_info">
-                            <h4 class="profile_name">Kamil</h4>
-                            <p>İstifadəçi adı: <span></span></p>
-                            <p>E-mail: <span></span></p>
-                        </div>
+                    <div id="profile_cover"><img class="img-fluid" style="max-width: 100%; height: auto;"
+                            src="stadium_images/profile_cover.png" alt="" style="width: 100%; ">
                     </div>
+                    <div id="profile_wrapper">
 
+                        <div id="profile_photo"><img class="img-fluid" style="max-width: 100%; height: auto;"
+                                src="stadium_images/profile.png" alt=""></div>
+                    </div>
+                    <div class="profile_info">
+                        <h4 id="profile_info_name"><span>Kamil</span></h4>
+                        <p id="profile_info_team">Komanda: <span></span></p>
+                        <p id="profile_info_nickname">İstifadəçi adı: <span></span></p>
+                        <p id="profile_info_email">E-mail: <span></span></p>
+                        <p id="profile_info_birthday">Doğum tarixi: <span></span></p>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,8 +94,8 @@
     <section id="footer">
         <div class="footer_socials">
             <ul>
-                <li><i class="fab fa-linkedin fa-2x"></i></li>
-                <li><i class="fab fa-facebook-square fa-3x"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
+                <li><i class="fab fa-facebook-square"></i></li>
                 <li><i class="fab fa-instagram"></i></li>
                 <li><i class="fab fa-whatsapp-square"></i></li>
                 <li><i class="fab fa-youtube-square"></i></li>
@@ -124,7 +130,8 @@
 
     <script src="app.js"></script>
     <script src="registration/registration.js"></script>
-    <script src="stadiums.js"></script>
+    <!-- <script src="stadiums.js"></script> -->
+    <!-- <script src="profile.js"></script> -->
 </body>
 
 </html>

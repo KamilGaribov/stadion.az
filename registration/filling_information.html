@@ -14,20 +14,23 @@
         </svg>
     </div>
     <form action="">
-        <div class="username">
-            <label for=""><i class="fas fa-user"></i></label>
-            <input type="text" id="username_input" autofocus required
-                placeholder="İstifadəçi adınızı daxil edin...">
-        </div>
-        <div class="email">
-            <label for=""><i class="fas fa-envelope"></i></label>
-            <input onclick="checkUserName();" type="email" id="email_input" required placeholder="E-mailinizi daxil edin...">
-        </div>
-        <div class="password">
+        <div class="name">
             <label for=""><i class="fas fa-key"></i></label>
-            <input onclick="checkUserName();" autocomplete="on" type="password" id="password_input" required placeholder="Parolunuzu daxil edin...">
+            <input autocomplete="on" type="text" id="name_input" required placeholder="Adınızı daxil edin...">
+        </div>
+        <div class="surname">
+            <label for=""><i class="fas fa-key"></i></label>
+            <input autocomplete="on" type="text" id="surname_input" required placeholder="Soyadınızı daxil edin...">
+        </div>
+        <div class="birthday">
+            <label for=""><i class="fas fa-key"></i></label>
+            <input  autocomplete="on" type="date" id="birthday_input" required placeholder="Yaşınızı daxil edin...">
+        </div>
+        <div class="team">
+            <label for=""><i class="fas fa-key"></i></label>
+            <input  autocomplete="on" type="text" id="team_input" required placeholder="Komandanızın adını daxil edin...">
         </div>
     </form>
-    <button type="button" onclick="signUp();">Qeydiyyatdan keç</button>
-    <p>Hesabınız var ?<span onclick="signInPage(); "> Daxil ol</span></p>
+    <a href="http://127.0.0.1:5500/stadion.az/profile.html"><button type="button"; onclick="fillForm();">Daxil ol</button></a>
+    
 </div>

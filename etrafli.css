@@ -1,0 +1,41 @@
+@keyframes appear{
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    60% {
+        transform: scale(1.4);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+#etrafli{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    animation: appear 600ms ease-in forwards;
+}
+#modaldiv{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;  
+    /* border: 7px solid green; */
+    width: 50%;
+    color: black;
+    /* renglerin deyisilme */
+    font-size: 20px;
+    text-align: center;
+}

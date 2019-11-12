@@ -9,6 +9,7 @@
         border-radius: 50px !important;
         background: #5b813d !important;
         border: none !important;
+        outline: none !important;
       }
       
       select{
@@ -99,8 +100,8 @@ body{
 
 
 .overlay {
-    position: relative;
-    top: 100px;
+    position: fixed;
+    top: 55px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -108,7 +109,7 @@ body{
     z-index: 6;
     height: 500px;
     width: 320px;
-    margin: auto;
+    margin: 30px auto;
     background-color: rgba(10, 10, 10, 0.705);
   }
   
@@ -119,11 +120,13 @@ body{
   }
   
   .overlay__inner {
-    height: 500px;
+    top: 125px;
+    height: 460px;
     width: 320px;
-    margin: 30px auto;
-    position: relative;
+    margin: auto;
+    position: fixed;
     opacity: 1;
+    overflow: auto;
   }
   
   .close {

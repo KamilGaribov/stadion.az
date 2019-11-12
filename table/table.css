@@ -1,0 +1,59 @@
+table{
+    margin: auto;
+    border: solid white 30px;
+    background-color: white;
+    position: relative;
+}
+td{
+    padding: 15px;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(2, 119, 2);
+    color: white;
+}
+.transparent{
+    color: transparent;
+    font-size: 1px;
+    background-image: linear-gradient(white, rgb(221, 221, 221))
+}
+
+#gradient{
+    background-image: linear-gradient(rgb(0, 175, 53), rgb(0, 145, 36));
+}
+
+
+
+
+
+
+
+.table_popup {
+    position: fixed;
+    top: 55px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 15;
+    height: 1000px;
+    width: 100%;
+    /* margin: auto; */
+    background-color:rgb(235, 235, 235);
+  }
+  
+  .table_popup.open {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .table_popup_inner {
+    padding-top: 40px;
+    height: 580px;
+    width: 100%;
+    margin: 30px auto;
+    position: fixed;
+    opacity: 1;
+    overflow: auto;
+  }

@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="registration/registration.css">
     <link rel="stylesheet" href="stadiums.css">
     <link rel="stylesheet" href="stadiums_info_page.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="table/table.css">
     <title>Stadion.az | Stadionlar</title>
 </head>
 
@@ -24,80 +27,224 @@
     </div>
     <div class="mask" onclick="closePopup()"></div>
 
+    <div class="table_popup">
+        <div class="close" onclick=""></i></div>
+        <div class="table_popup_inner">
+            <div id="tablediv">
+                <table class="table">
+                    <tr>
+                        <td scope="col">Logo</td>
+                        <td scope="col">12:00</td>
+                        <td scope="col">13:00</td>
+                        <td scope="col">14:00</td>
+                        <td scope="col">15:00</td>
+                        <td scope="col">16:00</td>
+                        <td scope="col">17:00</td>
+                        <td scope="col">18:00</td>
+                        <td scope="col">19:00</td>
+                        <td scope="col">20:00</td>
+                        <td scope="col">21:00</td>
+                        <td scope="col">22:00</td>
+                        <td scope="col">23:00</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Bazar ertəsi</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Çərşənbə axşamı</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Çərşənbə</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Cümə axşamı</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Cümə</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Şənbə</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Bazar</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <div class="stadiums_popup">
         <div class="close" onclick="closeStadiumCardsPopup()"><i class="fas fa-times"></i></div>
         <div class="stadiums_popup_inner">
             <section id="stadiums_info">
                 <div class="container">
-                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-interval="5000ms">
-                                <img src="stadium_images/slider/1.jpeg">
-
-                                <p class="testimonial-name">Kim John Un</p>
-                                <p class="testimonial-game">126 Oyun</p>
-                                <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin
-                                    seçimi.
-                                    Stadion.az</p>
-                            </div>
-                            <div class="carousel-item" data-interval="5000ms">
-                                <img src="stadium_images/slider/2.jpeg">
-                                <p class="testimonial-name">Irfan Gulam</p>
-                                <p class="testimonial-game">96 Oyun</p>
-                                <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin
-                                    seçimi.
-                                    Stadion.az</p>
-                            </div>
-                            <div class="carousel-item" data-interval="5000ms">
-                                <img src="stadium_images/slider/3.jpeg">
-                                <p class="testimonial-name">Joshua Scmitzh</p>
-                                <p class="testimonial-game">75 Oyun</p>
-                                <p class="testimonial-comment">Stadion.az çox gözəl saytdır. Stadion.az hər kəsin
-                                    seçimi.
-                                    Stadion.az</p>
-                            </div>
+                    <div class="loop owl-carousel owl-theme">
+                        <div class="item">
+                            <img id="img1" src="" alt="">
+                        </div>
+                        <div class="item">
+                            <img id="img2" src="" alt="">
+                        </div>
+                        <div class="item">
+                            <img id="img3" src="" alt="">
+                        </div>
+                        <div class="item">
+                            <img id="img4" src="" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="http://azfar.az/files/stadium/big_stadium_150452242445407.jpg" alt="">
                         </div>
                     </div>
-
                     <div class="row" id="stadiums_info_main">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6">
                             <div id="stadium_info_name">
-                                <h3>ruslan</h3>
+                                <h3></h3>
                                 <p>+994XX XXX XX XX</p>
                             </div>
-                            <div id="schedule"><button>Cədvəl</button></div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+
+                            <div id="stadium_info_time">
+                                <p>Seçdiyiniz vaxt: <span> --:--</span></p>
+                                <button>Sifariş edin</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                            <div id="stadium_info_schedule"><button onclick="table();">Cədvəl</button></div>
                         </div>
                     </div>
                     <div class="row" id="stadiums_info_second">
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <div id="stadium_info_city">
+                                <p>Şəhər:</p>
+                                <span></span>
+                            </div>
                             <div id="stadium_info_district">
-                                <span>sadadadadasdad</span>
-                                <p>13515135135151515135</p>
+                                <p>Rayon: </p>
+                                <span></span>
                             </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                             <div id="stadium_info_metro">
-                                <span>sadadadadasdad</span>
-                                <p>13515135135151515135</p>
+                                <p>Metro: </p>
+                                <span></span>
+                            </div>
+                            <div id="stadium_info_floor">
+                                <p>Örtük: </p>
+                                <span></span>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                            <div id="stadium_info_cover">
-                                <span>sadadadadasdad</span>
-                                <p>13515135135151515135</p>
-                            </div>
                             <div id="stadium_info_size">
-                                <span>sadadadadasdad</span>
-                                <p>13515135135151515135</p>
+                                <p>Ölçü: </p>
+                                <span></span>
                             </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                            <div id="stadium_info_cafe">
-                                <span>sadadadadasdad</span>
-                                <p>13515135135151515135</p>
-                            </div>
-
                         </div>
                     </div>
-
+                    <div class="row" id="stadiums_info_about">
+                        <div class="col-sm-6 col-md-6 col-lg-12 col-xl-12">
+                            <div id="stadium_info_cover">
+                                <span>Üst örtük: </span>
+                                <img src="" alt="">
+                            </div>
+                            <div id="stadium_info_cafe">
+                                <span>Kafe: </span>
+                                <img src="" alt="">
+                            </div>
+                            <div id="stadium_info_video">
+                                <span>Video: </span>
+                                <img src="" alt="">
+                            </div>
+                            <div id="stadium_info_parking">
+                                <span>Parking: </span>
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -107,7 +254,9 @@
         <div id="navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <!-- <a class="navbar-brand" href="#"><i class="fas fa-futbol fa-2x"></i></a> -->
+                    <a class="navbar-brand" href="https://kamilgaribov.github.io/stadion.az/index.html"><img
+                            src="stadium_images/logo.png" alt="Stadion.az"
+                            style="width: 150px; height: 40px; color: white"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -117,7 +266,8 @@
                         <ul class="navbar-nav mr-auto"></ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item active"">
-                                                    <a class=" nav-link" href="#">Stadionlar</a>
+                                <a onclick=" stadiumsPage();" class=" nav-link"
+                                href="https://kamilgaribov.github.io/stadion.az/stadiums.html">Stadionlar</a>
                             </li>
                             <li class="nav-item active  ">
                                 <a class="nav-link" href="#">Komandalar</a>
@@ -170,11 +320,26 @@
     </section>
 
 
+    <section id="footer">
+        <div class="footer_socials">
+            <ul>
+                <li><i class="fab fa-linkedin"></i></li>
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-whatsapp-square"></i></li>
+                <li><i class="fab fa-youtube-square"></i></li>
+            </ul>
+        </div>
+        <div class="footer_contact">+994 XX XXX XXXX</div>
+    </section>
+
     <script src="https://kit.fontawesome.com/baca010a78.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="bootstrap.bundle.min.js"></script>
     <script src="bootstrap.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
 
     <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
 
@@ -212,8 +377,9 @@
     <script src="app.js"></script>
     <script src="registration/registration.js"></script>
     <script src="stadiums.js"></script>
-    <script src="tester.js"></script>
+    <script src="enterCard.js"></script>
     <script src="stadiums_info_page.js"></script>
+    <script src="table/table.js"></script>
 </body>
 
 </html>
