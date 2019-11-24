@@ -69,9 +69,6 @@ var azfar_sumqayit = new stadion("AzFar Sumqayıt Stadionu", "Sumqayıt", "Sumqa
 var stadions = [Ruslan93_asagi, azfar_248, azfar_267, BOS, azfar_115, stadion_707, azfar_bineqediGencler, Ruslan93_yuxari, azfar_47, azfar_200, Serhedci_boyuk, azfar_20Yanvar, Serhedci_xalca, azfar_shefa, azfar_bakcell, Serhedci_futzal, azfar_264, azfar_171, FLand, azfar_124, azfar_74, Tenis_Ak, azfar_BDU, azfar_53, azfar_21, azfar_sumqayit]
 
 
-// function noScroll() {
-//     window.scrollTo(0, 0);
-// }
 
 
 //cardlar ucun pop-up acilmasi
@@ -118,9 +115,9 @@ function stadiumCardsPopup() {
                     }
 
                     document.querySelector("#img1").src = 'https://kamilgaribov.github.io/stadion.az/stadium_images/cards/' + (j+1) + '.jpg';
-                    document.querySelector("#img2").src = stadions[j-1].img1;
-                    document.querySelector("#img3").src = stadions[j-1].img2;
-                    document.querySelector("#img4").src = stadions[j-1].img3;
+                    document.querySelector("#img2").src = stadions[j].img1;
+                    document.querySelector("#img3").src = stadions[j].img2;
+                    document.querySelector("#img4").src = stadions[j+1].img3;
 
                     console.log(stadions[j])
                 }
@@ -567,3 +564,29 @@ function axtaris2() {
         }
     }
 }
+
+
+jQuery(document).ready(function ($) {
+    $('.loop').owlCarousel({
+        stagePadding: 50,
+        center: true,
+        // items: 2,
+        loop: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+});
+
+function table() {
+    document.querySelector('.table_popup').classList.add('open');
+};
